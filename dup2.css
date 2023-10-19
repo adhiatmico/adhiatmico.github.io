@@ -47,7 +47,7 @@ body {
 .text2{
     font-size: 40px;
     margin-left: 50px;
-    margin-top: 40px;
+    margin-top: 30px;
     font-weight: bolder;
     padding-left:100px;
 }
@@ -128,6 +128,15 @@ ul {
     background-size:contain;
     height:100%;
   }
+  .container5{
+    background-image: url(fform.jpg);
+    background-color: #ffffff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-repeat:no-repeat;
+    background-size:cover;
+    opacity: 0.5;
+    height:100%;
+  }
 
   .bText{
     font-size:larger;
@@ -198,69 +207,58 @@ ul {
   }
   
 
-
-  .flip-box1 {
-    background-image: transparent;
-    width: 40%;
-    height: 80%;  
-    perspective: 1000px;
-    margin-top: 50px;
-    margin-left: 80px;
-    
-  }
-  
-  .flip-box-inner1 {
+  .bulan{
+    width: 170px;
+    height: 123px;
     position: relative;
-    width: 100%;
-    height: 40%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+    animation: bulan1 10s infinite;
+    margin-left: 70px;
   }
-  
-  .flip-box1:hover .flip-box-inner1 {
-    transform: rotateX(180deg);
+  .mobil {
+    width: 170px;
+    height: 123px;
+    position: relative;
+    animation: example 4s infinite;
   }
-  
-  .flip-box-front1, .flip-box-back1 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+  .mobil1 {
+    width: 170px;
+    height: 123px;
+    position: relative;
+    animation: example 5s infinite;
   }
-  
-  .flip-box-front1 {
-    background-image:url(car.png);
-    background-size:cover;
+ 
+  @keyframes bulan1 {
+    0% {top: 0px;}
+    25% {top: 200px;}
+    50% {top:0px;}
+    75%{top:200px}
+    100%{top:0px}
   }
-  
-  .flip-box-back1 {
-    background-image:url(night.png);
-    background-size: cover;
-  
-    transform: rotateX(180deg);
+  @keyframes example {
+    from {left: 0px;}
+    to {left: 500px;}
   }
 
-  .collapsible {
-    background-color: #777;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
+  .zoom {
+    padding: 50px;
+    transition: transform .2s;
+    width: 270px;
+    height: 270px;
+    margin: 0 auto;
+    margin-left: 40px;
+    border-radius: 150px;
   }
   
-  .active, .collapsible:hover {
-    background-color: #555;
+  .zoom:hover {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); 
   }
-  
-  .content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
+
+  .formSpacing{
+    margin-top: 0px;
+  }
+  .formMargin{
+    margin-left:200px;
+    margin-top:20px;
   }
