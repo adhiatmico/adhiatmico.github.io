@@ -127,6 +127,7 @@ ul {
     background-repeat:no-repeat;
     background-size:contain;
     height:100%;
+    width:110%;
   }
   .container5{
     background-image: url(fform.jpg);
